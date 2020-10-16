@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(#fff, #a7a7a7);
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    position: relative;
+    background: white;
+    height: 400px;
+    width: 600px;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 100%;
+    animation-name: kör;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes kör {
+    0% {left: -500px;}
+    20%, 50% {left: 50px;}
+    100% {left: 600px;}
+}
